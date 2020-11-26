@@ -1,0 +1,136 @@
+/*
+    background-color: #0475BA
+*/
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+.primary-block {
+    background-color: #0475BA;
+    color: white;
+}
+
+.primary-block a:link, .primary-block a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.primary-block a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.secondary-block h3, .secondary-block h2 {
+ color: #0475BA;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 32px;
+}
+
+#menu {
+    display: none;
+}
+
+header, section, footer {
+    padding: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+/*
+    Style du header
+*/
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    padding: 16px;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+/*
+    Style des sections
+*/
+
+.list-with-points {
+    list-style: disc;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.experience-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+    Style du footer
+*/
+
+i {
+    margin-right: 8px;
+}
+
+#experiences {
+    max-width: 750px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    #menu {
+        display: block;
+    }
+
+    #menu ul {
+        display: flex;
+    }
+
+    #menu ul li {
+        margin: 0px 8px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #header-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #footer-links {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        background-color: green;
+    }
+
+    #footer-links-inside {
+        width: 50%;
+        background-color: orange;
+    }
+
+    #experiences h3 {
+        text-align: left;
+    }
+}
